@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<style>
+.grid-container {
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  /* display, grid-template-columns, gap */
+}
+
+.grid-container > div {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+#box1{
+ grid-column-start: 1;
+ grid-column-end: 3; 
+
+
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="grid-container">
+  <div id=box1>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
 
 </body>
 </html>
