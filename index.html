@@ -22,6 +22,8 @@
   display: flex;
   flex-direction: column; 
   justify-content: center;
+
+  border-radius: 8px;
 }
 
 #box1{
@@ -29,7 +31,7 @@
    grid-column-end: 5;
    background-color: #000000;
    color: #ffffff;
-   height: 35px; 
+   padding: 10px 20px; 
   
 }
 #box2{
@@ -37,6 +39,7 @@ grid-column-start: 1;
 grid-column-end: 5;
 background-color: #000000;
 color: #ffffff;
+padding: 20px;
 }
 #box3{
   grid-column-start: 1;
@@ -83,8 +86,20 @@ img {
   margin: 0;
   padding: 0;
 }
-#box1 li {
+#box1 li:hover  {
+  color: lightgray;
+  cursor: pointer;
   display: inline;
+}
+#box1 h3 { 
+  margin: 0;
+  font-size: 18px;
+}
+#box2 h2 {
+  margin-bottom: 10px;
+}
+#box2 p {
+  margin: 0;
 }
   
 </style>
@@ -113,12 +128,25 @@ img {
   
   <div id=box3>
     <h3>Subaru vs BMW</h3>
-  <p>Car compares</p>
+  <p>Content will be added here later.</p>
   </div>
-  <div id=box4><h4>Subaru</h4></div>
-  <div id=box5><h4>Subaru engine</h4></div>
-  <div id=box6><h4>BMW</h4></div>
-  <div id=box7><h4>BMW engine</h4></div>
+  <div id=box4>
+    <h4>Subaru car</h4>
+    <img src="">
+  </div>
+
+  <div id=box5>
+    <h4>Subaru engine</h4>
+    <img src="">
+  </div>
+  <div id=box6>
+    <h4>BMW car</h4>
+    <img src="">
+  </div>
+  <div id=box7>
+    <h4>BMW engine</h4>
+    <img src="">
+  </div>
 
 </div>
 
